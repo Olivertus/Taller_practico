@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Descubre accesorios tecnológicos minimalistas y ergonómicos para mejorar tu espacio de trabajo."
+  >
+
+  <meta name="theme-color" content="#FFFFFF">
+
+  <title>Minimal Tech | Accesorios para tu espacio de trabajo</title>
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       1. ENCABEZADO Y NAVEGACIÓN
+  ====================================================== -->
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a class="logo" href="#inicio" aria-label="Minimal Tech, página de inicio">
+        Minimal<span>Tech.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="navegacion-principal"
+      >
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+
+      <nav
+        class="primary-navigation"
+        id="navegacion-principal"
+        aria-label="Navegación principal"
+      >
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#ergonomia">Ergonomía</a></li>
+          <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <form class="search-form" role="search">
+          <label class="sr-only" for="buscador">
+            Buscar productos
+          </label>
+
+          <input
+            type="search"
+            id="buscador"
+            name="busqueda"
+            placeholder="Buscar productos..."
+            autocomplete="off"
+          >
+
+          <button type="submit" aria-label="Buscar">
+            <span aria-hidden="true">⌕</span>
+          </button>
+
+          <div
+            class="search-suggestions"
+            id="sugerencias-busqueda"
+            role="listbox"
+            aria-label="Sugerencias de búsqueda"
+          ></div>
+        </form>
+
+        <button
+          class="cart-button"
+          type="button"
+          aria-label="Abrir carrito de compras"
+        >
+          <span aria-hidden="true">🛒</span>
+          <span>Carrito</span>
+          <span class="cart-count" aria-label="0 productos">0</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         2. SECCIÓN PRINCIPAL (HERO)
+    ====================================================== -->
+
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="eyebrow">
+            Tecnología para trabajar mejor
+          </span>
+
+          <h1>
+            Diseña un espacio de trabajo
+            <span>extraordinario.</span>
+          </h1>
+
+          <p>
+            Descubre accesorios tecnológicos minimalistas y ergonómicos
+            que combinan diseño, comodidad y productividad.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">
+              Explorar productos
+            </a>
+
+            <a class="btn btn-secondary" href="#categorias">
+              Ver categorías
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <span>✓ Diseño funcional</span>
+            <span>✓ Calidad seleccionada</span>
+            <span>✓ Compra sencilla</span>
+          </div>
+
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85"
+            alt="Espacio de trabajo moderno con computadora y accesorios tecnológicos"
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         3. BENEFICIOS
+    ====================================================== -->
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+
+        <article class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true">🚚</span>
+          <h3>Envíos</h3>
+          <p>Consulta las opciones de envío disponibles.</p>
+        </article>
+
+        <article class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true">🛡️</span>
+          <h3>Compra segura</h3>
+          <p>Información clara durante tu compra.</p>
+        </article>
+
+        <article class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true">✨</span>
+          <h3>Diseño minimalista</h3>
+          <p>Productos seleccionados por su funcionalidad.</p>
+        </article>
+
+        <article class="benefit-item">
+          <span class="benefit-icon" aria-hidden="true">💬</span>
+          <h3>Atención</h3>
+          <p>Estamos aquí para resolver tus dudas.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         4. CATEGORÍAS
+    ====================================================== -->
+
+    <section class="categories section-padding" id="categorias">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Explora nuestra selección</span>
+          <h2>Encuentra lo que necesitas</h2>
+          <p>
+            Accesorios diseñados para mejorar tu espacio de trabajo.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+
+          <a class="category-card" href="#productos" data-category="escritorio">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85"
+              alt="Escritorio moderno y organizado"
+              loading="lazy"
+            >
+            <div class="category-info">
+              <h3>Accesorios de escritorio</h3>
+              <span>Explorar categoría →</span>
+            </div>
+          </a>
+
+          <a class="category-card" href="#productos" data-category="ergonomia">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=85"
+              alt="Espacio de trabajo cómodo y funcional"
+              loading="lazy"
+            >
+            <div class="category-info">
+              <h3>Ergonomía</h3>
+              <span>Explorar categoría →</span>
+            </div>
+          </a>
+
+          <a class="category-card" href="#productos" data-category="tecnologia">
+            <img
+              src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85"
+              alt="Computadora portátil y accesorios tecnológicos"
+              loading="lazy"
+            >
+            <div class="category-info">
+              <h3>Accesorios tecnológicos</h3>
+              <span>Explorar categoría →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         5. PRODUCTOS DESTACADOS
+    ====================================================== -->
+
+    <section class="featured-products section-padding">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Selección especial</span>
+          <h2>Productos destacados</h2>
+          <p>
+            Descubre algunos de los accesorios que pueden transformar
+            tu experiencia de trabajo.
+          </p>
+        </div>
+
+        <div
+          class="products-grid"
+          id="productos-destacados"
+          aria-live="polite"
+        >
+          <!-- Los productos destacados se insertarán mediante JavaScript. -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         6. CATÁLOGO Y FILTROS
+    ====================================================== -->
+
+    <section class="catalog section-padding" id="productos">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Nuestro catálogo</span>
+          <h2>Explora todos los productos</h2>
+          <p>
+            Encuentra accesorios que se adapten a tus necesidades.
+          </p>
+        </div>
+
+        <div class="catalog-layout">
+
+          <aside class="filters" aria-label="Filtros de productos">
+
+            <h3>Filtrar productos</h3>
+
+            <div class="filter-group">
+              <label for="filtro-categoria">Categoría</label>
+
+              <select id="filtro-categoria" name="categoria">
+                <option value="todos">Todas las categorías</option>
+                <option value="escritorio">Escritorio</option>
+                <option value="ergonomia">Ergonomía</option>
+                <option value="tecnologia">Tecnología</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filtro-precio">Precio máximo</label>
+
+              <input
+                type="range"
+                id="filtro-precio"
+                name="precio"
+                min="0"
+                max="500000"
+                step="10000"
+                value="500000"
+              >
+
+              <output for="filtro-precio" id="precio-seleccionado">
+                $500.000
+              </output>
+            </div>
+
+            <div class="filter-group">
+              <label for="filtro-color">Color</label>
+
+              <select id="filtro-color" name="color">
+                <option value="todos">Todos los colores</option>
+                <option value="negro">Negro</option>
+                <option value="blanco">Blanco</option>
+                <option value="gris">Gris</option>
+              </select>
+            </div>
+
+            <button
+              class="btn btn-secondary btn-filter-reset"
+              type="button"
+              id="limpiar-filtros"
+            >
+              Limpiar filtros
+            </button>
+
+          </aside>
+
+          <div class="catalog-content">
+
+            <div class="catalog-toolbar">
+              <p id="cantidad-productos">
+                Productos disponibles
+              </p>
+
+              <label for="orden-productos">
+                Ordenar por:
+              </label>
+
+              <select id="orden-productos" name="orden">
+                <option value="destacados">Destacados</option>
+                <option value="precio-asc">Menor precio</option>
+                <option value="precio-desc">Mayor precio</option>
+                <option value="nombre">Nombre</option>
+              </select>
+            </div>
+
+            <div
+              class="products-grid"
+              id="productos-catalogo"
+              aria-live="polite"
+            >
+              <!-- El catálogo se generará mediante JavaScript. -->
+            </div>
+
+            <p
+              class="empty-products"
+              id="sin-resultados"
+              hidden
+            >
+              No encontramos productos con esos filtros.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         7. SECCIÓN DE ERGONOMÍA
+    ====================================================== -->
+
+    <section class="ergonomics section-padding" id="ergonomia">
+      <div class="container ergonomics-content">
+
+        <div class="ergonomics-image">
+          <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85"
+            alt="Espacio de trabajo organizado y ergonómico"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="ergonomics-text">
+
+          <span class="eyebrow">Trabaja de forma inteligente</span>
+
+          <h2>
+            Tu espacio de trabajo también importa.
+          </h2>
+
+          <p>
+            Un entorno organizado y cómodo puede ayudarte a desarrollar
+            mejores hábitos durante tus actividades diarias.
+          </p>
+
+          <ul class="ergonomics-list">
+            <li>Organiza los elementos de tu escritorio.</li>
+            <li>Procura mantener una postura cómoda.</li>
+            <li>Adapta tu espacio a tus necesidades.</li>
+            <li>Realiza pausas durante tu jornada.</li>
+          </ul>
+
+          <a class="btn btn-primary" href="#productos">
+            Descubrir accesorios
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         8. RESEÑAS
+    ====================================================== -->
+
+    <section class="reviews section-padding">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Experiencias</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p>
+            Las opiniones verificadas aparecerán cuando se conecte
+            un sistema de reseñas.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <article class="review-card">
+            <span class="review-stars" aria-label="Sin calificación publicada">
+              ★★★★★
+            </span>
+
+            <p>
+              Las reseñas de clientes se mostrarán aquí cuando
+              estén disponibles y verificadas.
+            </p>
+
+            <span class="review-author">
+              Espacio reservado para reseñas verificadas
+            </span>
+          </article>
+
+          <article class="review-card">
+            <span class="review-stars" aria-label="Sin calificación publicada">
+              ★★★★★
+            </span>
+
+            <p>
+              Queremos ofrecer información auténtica sobre
+              la experiencia de compra.
+            </p>
+
+            <span class="review-author">
+              Espacio reservado para reseñas verificadas
+            </span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         9. BOLETÍN Y DESCUENTO
+    ====================================================== -->
+
+    <section class="newsletter section-padding">
+      <div class="container newsletter-content">
+
+        <div class="newsletter-text">
+          <span class="eyebrow">Mantente actualizado</span>
+
+          <h2>
+            Recibe novedades y ofertas especiales.
+          </h2>
+
+          <p>
+            Suscríbete al boletín para conocer nuevos productos,
+            consejos y promociones.
+          </p>
+        </div>
+
+        <form
+          class="newsletter-form"
+          id="formulario-boletin"
+        >
+
+          <label for="correo-boletin">
+            Correo electrónico
+          </label>
+
+          <div class="newsletter-input-group">
+            <input
+              type="email"
+              id="correo-boletin"
+              name="correo"
+              placeholder="nombre@correo.com"
+              autocomplete="email"
+              required
+            >
+
+            <button class="btn btn-primary" type="submit">
+              Suscribirme
+            </button>
+          </div>
+
+          <p class="newsletter-privacy">
+            Al suscribirte aceptas recibir comunicaciones comerciales.
+          </p>
+
+          <p
+            class="newsletter-message"
+            id="estado-boletin"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         10. PREGUNTAS FRECUENTES
+    ====================================================== -->
+
+    <section class="faq section-padding" id="preguntas">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">¿Necesitas ayuda?</span>
+          <h2>Preguntas frecuentes</h2>
+          <p>
+            Información importante antes de realizar tu compra.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>
+              ¿Cuáles son los métodos de envío?
+            </summary>
+
+            <p>
+              Los métodos, tiempos y costos de envío se informarán
+              durante el proceso de compra.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Cuáles son los métodos de pago?
+            </summary>
+
+            <p>
+              Los métodos de pago disponibles se mostrarán cuando
+              el sistema de pagos esté configurado.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Puedo realizar una devolución?
+            </summary>
+
+            <p>
+              Las condiciones y los plazos de devolución deberán
+              consultarse en la política oficial de la tienda.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Los productos tienen garantía?
+            </summary>
+
+            <p>
+              La cobertura y duración de la garantía dependerán
+              de las condiciones establecidas para cada producto.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              ¿Cómo puedo contactar con la tienda?
+            </summary>
+
+            <p>
+              Puedes comunicarte mediante los canales de atención
+              que se habiliten en la sección de contacto.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       11. CARRITO DE COMPRAS
+  ====================================================== -->
+
+  <div
+    class="cart-overlay"
+    id="cart-overlay"
+    hidden
+  ></div>
+
+  <aside
+    class="cart-panel"
+    id="cart-panel"
+    aria-label="Carrito de compras"
+    aria-hidden="true"
+  >
+
+    <div class="cart-header">
+      <h2>Tu carrito</h2>
+
+      <button
+        class="cart-close"
+        type="button"
+        aria-label="Cerrar carrito"
+      >
+        ×
+      </button>
+    </div>
+
+    <div
+      class="cart-items"
+      id="cart-items"
+      aria-live="polite"
+    >
+      <p class="cart-empty">
+        Tu carrito está vacío.
+      </p>
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+
+      <button
+        class="btn btn-primary checkout-button"
+        type="button"
+        disabled
+      >
+        Continuar compra
+      </button>
+
+      <p class="cart-note">
+        El proceso de pago estará disponible cuando se conecte
+        una plataforma de comercio electrónico.
+      </p>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =====================================================
+       12. PIE DE PÁGINA
+  ====================================================== -->
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a class="logo footer-logo" href="#inicio">
+            Minimal<span>Tech.</span>
+          </a>
+
+          <p>
+            Accesorios tecnológicos minimalistas y ergonómicos
+            para transformar tu espacio de trabajo.
+          </p>
+
+        </div>
+
+        <div class="footer-column">
+          <h3>Explorar</h3>
+
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#ergonomia">Ergonomía</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Información</h3>
+
+          <ul>
+            <li><a href="#preguntas">Preguntas frecuentes</a></li>
+            <li><a href="#politica-devoluciones">Devoluciones</a></li>
+            <li><a href="#garantias">Garantías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contacto</h3>
+
+          <ul>
+            <li>
+              <a href="mailto:contacto@minimaltech.com">
+                Correo electrónico
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="anio-actual">2026</span> MinimalTech.
+          Todos los derechos reservados.
+        </p>
+
+        <p>
+          Tecnología, diseño y funcionalidad.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
